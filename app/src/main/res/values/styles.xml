@@ -1,0 +1,1223 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 14 theme customizations can go here. -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/upperheader</item>
+        <item name="android:titleTextStyle">@style/Theme.MyAppTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="Theme.MyAppTheme.ActionBar.TitleTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    // Start Common header
+
+    // Login header
+    <style name="LoginHeaderText">
+        <item name ="android:background">#3399FF</item>
+        <item name ="android:layout_width">325dp</item>
+        <item name ="android:layout_height">50dp</item>
+        <item name ="android:text">Employee Login</item> <!--HRMS Login-->
+        <item name ="android:gravity">center</item>
+        <item name ="android:textSize">30dp</item>
+    </style>
+
+    // HeaderFrame after login
+
+
+
+    // Header Text after login
+    <style name="HeaderText">
+        <item name ="android:background">#3399FF</item>
+        <item name ="android:layout_width">225dp</item>
+        <item name ="android:layout_height">50dp</item>
+        <item name ="android:text">Employee Mgnt System</item> <!--HRMS-->
+        <item name ="android:gravity">center</item>
+        <item name ="android:textSize">30dp</item>
+    </style>
+
+    // Header image after login
+    <style name="HeaderImage">
+        <item name ="android:layout_width">60dp</item>
+        <item name ="android:layout_height">60dp</item>
+        <item name ="android:src">@mipmap/rlogo</item>
+    </style>
+
+    //Welcome Username
+    <style name="WelcomeFrameLayout">
+        <item name ="android:layout_width">fill_parent</item>
+        <item name ="android:layout_height">fill_parent</item>
+        <item name ="android:paddingTop">13px</item>
+    </style>
+
+    //Before Welcome user image
+    <style name="WelComeUserImage">
+        <item name="android:width">80dp</item>
+        <item name ="android:layout_width">200dp</item>
+        <item name ="android:layout_height">40dp</item>
+        <item name ="android:src">@drawable/user</item>
+        <!--  <item name ="android:layout_gravity">center</item>-->
+        <item name="android:layout_gravity">left|center</item>
+    </style>
+
+
+    <!--<style name="WelComeUserName">
+        <item name ="android:layout_width">fill_parent</item>
+        <item name ="android:layout_height">fill_parent</item>
+        <item name ="android:paddingTop">13px</item>
+    </style>-->
+
+    // today's time in layout
+    <style name="TodayTimeInLayout">
+        <item name ="android:layout_width">fill_parent</item>
+        <item name ="android:layout_height">fill_parent</item>
+        <item name ="android:paddingTop">13dp</item>
+        <item name ="android:paddingLeft">10dp</item>
+    </style>
+
+    //to display Today's time wording
+    <style name="TodayTimeIn">
+        <item name ="android:layout_width">fill_parent</item>
+        <item name ="android:layout_height">fill_parent</item>
+        <item name ="android:textSize">18dp</item>
+        <item name ="android:textColor">#000000</item>
+    </style>
+
+    // style to get today's time in  from db
+    <style name="DisplayTimeIn">
+        <item name ="android:layout_width">wrap_content</item>
+        <item name ="android:layout_height">wrap_content</item>
+        <item name ="android:textSize">18dp</item>
+        <item name ="android:layout_gravity">center_horizontal|top</item>
+        <item name="android:textColor">#ffffff</item>
+
+    </style>
+
+    // to display current leave balance wording
+    <style name="CurrentLeaveBalLayout">
+        <item name ="android:layout_width">fill_parent</item>
+        <item name ="android:layout_height">fill_parent</item>
+        <item name ="android:paddingTop">13dp</item>
+        <item name ="android:paddingLeft">10dp</item>
+        <item name ="android:paddingBottom">30dp</item>
+    </style>
+
+    // to display current leave balance wording
+    <style name="FrameLayout1">
+        <item name ="android:layout_width">fill_parent</item>
+        <item name ="android:layout_height">30dp</item>
+        <item name ="android:paddingTop">5dp</item>
+        <item name ="android:paddingLeft">10dp</item>
+        <item name ="android:paddingBottom">5dp</item>
+    </style>
+
+    // to display current leave balance wording
+    <style name="currentleavebal">
+        <item name ="android:layout_width">wrap_content</item>
+        <item name ="android:layout_height">wrap_content</item>
+        <item name ="android:text">Current Leave Balance: </item>
+        <item name ="android:textSize">18dp</item>
+        <item name ="android:textColor">#000000</item>
+        <item name ="android:layout_gravity">left|bottom</item>
+    </style>
+
+    <style name="getcurrentleavebal">
+        <item name ="android:layout_width">wrap_content</item>
+        <item name ="android:layout_height">wrap_content</item>
+        <item name ="android:textSize">18sp</item>
+        <item name ="android:textColor">#000000</item>
+        <item name="android:gravity">right</item>
+        <item name ="android:layout_gravity">center_horizontal|top</item>
+    </style>
+
+    // line
+    <style name="line">
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">1dp</item>
+        <item name ="android:background">@android:color/black</item>
+    </style>
+    // End Common header
+
+
+    // Bullets common to all
+    <style name="bullets">
+        <item name ="android:layout_width">40dp</item>
+        <item name ="android:layout_height">40dp</item>
+
+    </style>
+
+    // expandable + common to all
+    <style name="empselfseriveexpand">
+        <item name ="android:layout_width">wrap_content</item>
+        <item name ="android:layout_height">wrap_content</item>
+        <item name ="android:text">+</item>
+        <item name ="android:textColor">#000000</item>
+        <item name ="android:layout_gravity">right</item>
+        <item name ="android:paddingRight">30dp</item>
+    </style>
+
+    // Start common menu in employee and manager
+
+    //employee service frame layout
+    <style name="empselfserviceframelayout">
+        <item name ="android:layout_width">fill_parent</item>
+        <item name ="android:layout_height">fill_parent</item>
+        <item name ="android:paddingLeft">40dp</item>
+        <item name ="android:paddingTop">30px</item>
+    </style>
+
+    // employee self service wording
+    <style name="empselfservice">
+        <item name ="android:layout_width">wrap_content</item>
+        <item name ="android:layout_height">wrap_content</item>
+        <item name ="android:textSize">18sp</item>
+        <item name ="android:textColor">#000000</item>
+        <item name ="android:layout_gravity">center_horizontal|top</item>
+    </style>
+    // end common menu in employee and manager
+
+
+    // swipe regularization
+    <style name="swiperegularization">
+        <item name ="android:layout_width">fill_parent</item>
+        <item name ="android:layout_height">fill_parent</item>
+        <item name ="android:paddingTop">5dp</item>
+        <item name ="android:paddingLeft">5dp</item>
+        <item name ="android:paddingBottom">10dp</item>
+    </style>
+
+    // to display days in swipe regularization
+    <style name="swipedaysframelayout">
+        <item name ="android:layout_width">fill_parent</item>
+        <item name ="android:layout_height">40dp</item>
+        <item name ="android:paddingTop">5dp</item>
+        <item name ="android:paddingLeft">30dp</item>
+        <item name ="android:paddingBottom">5dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    // spinner in select leave type
+    <style name="spinner">
+        <item name ="android:layout_width">175dp</item>
+        <item name ="android:layout_height">20dp</item>
+        <item name ="android:layout_gravity">right</item>
+        <item name ="android:spinnerMode">dropdown</item>
+    </style>
+
+    // framelayout to right
+    <style name="framelayouttoright">
+        <item name ="android:layout_width">fill_parent</item>
+        <item name ="android:layout_height">fill_parent</item>
+        <item name ="android:paddingTop">5dp</item>
+        <item name ="android:paddingBottom">5dp</item>
+        <item name ="android:layout_gravity">right</item>
+    </style>
+
+    <style name="HeaderFrameLayout">
+        <item name ="android:layout_width">wrap_content</item>
+        <item name ="android:layout_height">wrap_content</item>
+        <item name ="android:layout_gravity">right</item>
+        <item name ="android:background">#3399FF</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    // button style
+    <style name="button">
+        <item name ="android:layout_width">wrap_content</item>
+        <item name ="android:layout_height">wrap_content</item>
+        <item name ="android:layout_gravity">right</item>
+        <item name ="android:background">#3399FF</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:gravity">center</item>
+
+        <!--//<item name="android:visibility">invisible</item>-->
+    </style>
+
+    <style name="checkbox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">end</item>
+        <item name="android:layout_gravity">right</item>
+    </style>
+
+
+    <!--// start from here-->
+
+    <style name="HeadingStyle">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="TextViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/backsquare</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="LoginButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@drawable/buttonselector</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="SendButton">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">60dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="SendButton1">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">60dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="TextViewsBold20">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <style name="TextViewsBold15">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <!-- <style name="RLogoImage">
+         <item name ="android:layout_width">80dp</item>
+         <item name ="android:layout_height">80dp</item>
+         <item name ="android:src">@mipmap/rlogo</item>
+     </style>-->
+
+    <style name="TextViewsBold15.GravityRightTop">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name ="android:layout_gravity">right</item>
+        <item name="android:layout_marginTop">15dp</item>
+
+    </style>
+
+    <style name="TextViewsBold20.GravityCenter">
+        <item name ="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">22dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_height">30dp</item>
+
+    </style>
+
+    <style name="TextViewsBold20.Top5">
+        <item name ="android:layout_marginTop">3dp</item>
+    </style>
+    <!--for emp_dashboard-->
+    <style name="HeaderFrameLayoutWeight2">
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">15dp</item>
+        <item name ="android:layout_weight">1</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name ="android:background">@drawable/upperheader</item>
+    </style>
+
+    <style name="HeaderFrameLayoutWeight3">
+        <!-- header-->
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">0dp</item>
+        <item name ="android:layout_weight">2</item>
+        <item name ="android:background">@drawable/upperheader</item>
+    </style>
+
+
+    <style name="SubFrameLayoutWeight1">
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">7dp</item>
+        <item name="android:background">#8ED2FF</item>
+    </style>
+
+    <style name="SubFrameLayoutWeight2">
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">0dp</item>
+        <item name ="android:layout_weight">2</item>
+        <item name ="android:background">#8ED2FF</item>
+    </style>
+
+    <style name="NormalFrameLayout">
+        <item name ="android:layout_width">fill_parent</item>
+        <item name ="android:layout_height">0dp</item>
+        <item name ="android:layout_weight">1</item>
+        <!--  <item name="android:background">#193469</item>-->
+    </style>
+
+    <style name="TextViewForMenus" >
+        <item name="android:textColor" >#000000</item>
+        <item name="android:textSize" >16dp</item>
+        <item name="android:typeface" >serif</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="TextViewNormal" >
+        <item name="android:textColor" >#000000</item>
+        <item name="android:textSize" >16dp</item>
+        <item name="android:typeface" >serif</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="CustomTextView.MarginLeft50" >
+        <item name="android:layout_marginLeft">40dp</item>
+    </style>
+    <style name="CustomTextView.MarginLeft200" >
+        <item name="android:layout_marginLeft">150dp</item>
+    </style>
+
+    <style name="TextViewNormal.center">
+        <item name="android:layout_gravity">center|center_vertical</item>
+    </style>
+    <style name="LeaveBalance">
+        <item name="android:textColor" >#ffffff</item>
+        <item name="android:textSize" >17dp</item>
+        <item name="android:fontFamily" >sans-serif-condensed</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name ="android:layout_gravity">right|center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextViewNormal.marginRight">
+        <!--sub header-->
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center|center_horizontal</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="CheckBoxStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:button">@drawable/customecheckbox</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+        <item name="android:layout_marginRight">95dp</item>
+    </style>
+
+    <style name="CheckBoxStyleRight">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:button">@drawable/customecheckbox</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+        <item name="android:layout_marginRight">55dp</item>
+    </style>
+
+    <style name="ImageApplyCalendar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+        <item name="android:paddingRight">140dp</item>
+    </style>
+
+    <style name="FrameLayout2">
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">0dp</item>
+        <item name ="android:layout_weight">2</item>
+        <!-- <item name="android:background">#193469</item>-->
+    </style>
+
+    <style name="FrameLayoutWeight1">
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">0dp</item>
+        <item name ="android:layout_weight">1</item>
+        <!-- <item name="android:background">#193469</item>-->
+    </style>
+    <style name="FrameLayoutWeight3">
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">12dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name ="android:layout_weight">1</item>
+        <!-- <item name="android:background">#193469</item>-->
+    </style>
+
+    <style name="FrameLayoutWeight2">
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">0dp</item>
+        <item name ="android:layout_weight">2</item>
+        <!-- <item name="android:background">#193469</item>-->
+    </style>
+
+    <style name="EditTextMultiline">
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">0dp</item>
+        <item name="android:fontFamily" >sans-serif-condensed</item>
+        <item name ="android:ems">10</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">#ffffff</item>
+        <item name ="android:layout_marginBottom">5dp</item>
+        <item name ="android:layout_marginTop">5dp</item>
+        <item name ="android:layout_marginLeft">25dp</item>
+        <item name ="android:layout_marginRight">25dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:background">@drawable/backsqforapply</item>
+    </style>
+
+    <style name="EditTextMultiline1">
+        <item name ="android:layout_width">300dp</item>
+        <item name ="android:layout_height">0dp</item>
+        <item name ="android:lines">1</item>
+        <item name ="android:ems">10</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">#ffffff</item>
+
+        <item name ="android:layout_marginBottom">10dp</item>
+        <item name ="android:layout_marginTop">10dp</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name ="android:layout_marginLeft">30dp</item>
+        <item name ="android:layout_marginRight">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/backsqforapply</item>
+    </style>
+
+    <style name="NormalEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/backsqforapply</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="AppliedLeaves">
+        <item name="android:textColor" >#000000</item>
+        <item name="android:textSize" >20dp</item>
+        <item name="android:typeface" >serif</item>
+        <item name="android:layout_marginRight">20dp</item>
+
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppliedLeaves.AppliedLeavesTextLeft">
+        <item name ="android:layout_gravity">left|center_vertical</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_marginLeft">40dp</item>
+    </style>
+
+    <style name="AppliedLeaves.AppliedLeavesValueRight">
+        <item name="android:textSize" >17dp</item>
+        <item name ="android:layout_gravity">right|center_vertical</item>
+        <item name="android:fontFamily" >sans-serif-condensed</item>
+    </style>
+
+    <style name="ImageViewForAllScreen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="RadioButtonStyle">
+        <item name="android:fontFamily" >sans-serif-condensed</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">30dp</item>
+    </style>
+
+    <style name="SimpleButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">#00398F</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="ButtonOnSwipe">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Apply</item>
+        <item name="android:onClick">SubmitReason</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    // B styles
+
+
+
+
+    <!-- ====Custom Background Style for Login Screen Root View=====-->
+    <style name="CustomBackground">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_height">match_parent</item>
+        <!--  <item name="android:background">@drawable/backgroundcolor</item>-->
+        <item name="android:paddingTop">50dp</item>
+
+    </style>
+
+
+    <!-- ====Custom Background Style for All Screen Root View=====-->
+    <style name="CustomBackgroundAll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/bggradient</item>
+        <item name="android:paddingTop">5dp</item>
+
+    </style>
+
+
+    <!-- ==========Custom Style for TextView=============-->
+
+    <style name="CustomTextView" >
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor" >#000000</item>
+        <item name="android:textSize" >18dp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface" >serif</item>
+    </style>
+
+
+    <!-- ==========Custom Style for Normal TextView=============-->
+
+    <style name="TextViewNormal1" >
+
+        <item name="android:layout_width" >match_parent</item>
+        <item name="android:layout_height" >0dp</item>
+        <item name="android:textColor" >#000000</item>
+        <item name="android:textSize" >20dp</item>
+        <item name="android:typeface" >sans</item>
+    </style>
+
+    <style name="TextViewForMenus.border" parent="TextViewForMenus">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:paddingLeft">50dp</item>
+        <item name="android:textSize" >19dp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:background" >@drawable/textcolormenu</item>
+        <item name="android:clickable">true</item>
+
+    </style>
+
+    <style name="TextViewForMenus.bordermngr" parent="TextViewForMenus">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:paddingLeft">50dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:textSize" >19dp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:background" >@drawable/textcolormenu</item>
+        <item name="android:clickable">true</item>
+
+    </style>
+
+    <style name="BorderWhite" parent="TextViewNormal">
+        <item name="android:background" >@drawable/border</item>
+    </style>
+    <!-- ==========Custom Style for Bold TextView=============-->
+
+    <style name="MainMenu" >
+        <item name="android:textColor" >#000000</item>
+        <item name="android:background">@drawable/empgradient</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize" >22dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">38dp</item>
+        <item name ="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+    <style name="MainMenuMngr" >
+        <item name="android:textColor" >#000000</item>
+        <item name="android:background">@drawable/empgradient</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize" >20dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name ="android:layout_marginTop">7dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+    <!-- ==========Custom Style for EditText=============-->
+
+
+    <style name="CustomEditText" >
+        <item name="android:layout_width">260dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_gravity">center_horizontal|top</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+
+    <!-- ===========Custom Style for Button==============-->
+
+    <style name="CustomButton" >
+        <item name="android:background">#4DB8FF</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center_horizontal|top</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+
+    <!-- =========Header Frame Layout========== -->
+
+    <!--  <style name="HeaderFrameLayout">
+          <item name ="android:layout_width">fill_parent</item>
+          <item name ="android:layout_height">75dp</item>
+          <item name ="android:background">@drawable/backgroundcolor</item>
+          <item name ="android:padding">6dp</item>
+      </style>
+
+-->
+    <!--============R Logo Image================ -->
+
+    <style name="RLogoImage">
+        <item name ="android:layout_width">wrap_content</item>
+        <item name ="android:layout_height">wrap_content</item>
+        <item name ="android:src">@mipmap/rlogo</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <!-- ========Employee Mgnt Txt Text========= -->
+    <!-- <style name="RapidoHRMSText">
+         <item name ="android:background">@drawable/backgroundcolor</item>
+         <item name="android:textSize">20dp</item>
+         <item name ="android:layout_width">225dp</item>
+         <item name ="android:layout_height">50dp</item>
+         <item name ="android:text">Employee Mgnt</item>
+         <item name ="android:gravity">center</item>
+         <item name ="android:textColor">#ffffff</item>
+     </style>-->
+
+
+    <!-- ======== Hi, User Name====== -->
+    <style name="WelComeUserName">
+        <item name ="android:layout_width">wrap_content</item>
+        <item name ="android:layout_height">wrap_content</item>
+        <item name ="android:layout_gravity">right</item>
+        <item name ="android:gravity">center_horizontal|right|top|</item>
+        <item name ="android:textSize">14dp</item>
+        <item name ="android:textColor">#ffffff</item>
+    </style>
+
+
+    <!--============Form Image================ -->
+
+    <style name="FormImage">
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">60dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <!-- =========== Form Name Text View ======== -->
+    <style name="CustomFormName" >
+        <item name="android:textColor" >#ffffff</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:layout_gravity" >center</item>
+        <item name="android:textSize" >25dp</item>
+        <item name="android:typeface" >sans</item>
+    </style>
+
+
+    <!-- ======= List View ============ -->
+
+    <style name="CustomListView" >
+        <item name="android:layout_marginLeft" >20dp</item>
+        <item name="android:layout_marginRight" >20dp</item>
+        <item name="android:layout_width" >match_parent</item>
+        <item name="android:layout_height" >0dp</item>
+        <item name="android:textSize" >15dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_gravity" >center_horizontal|center</item>
+    </style>
+
+
+    <!-- ===========Frame style for Employeee Dashborad=========== -->
+    <style name="FrameEmpDashboard" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+
+    </style>
+
+
+
+    <!-- ===========Employee Mgnt Headin Style=========== -->
+    <!-- <style name="TextViewsBold20">
+         <item name="android:layout_width">wrap_content</item>
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:textColor">#ffffff</item>
+         <item name="android:textSize">20dp</item>
+         <item name="android:textStyle">bold</item>
+         <item name="android:layout_marginBottom">5dp</item>
+         <item name="android:layout_marginTop">10dp</item>
+         <item name="android:layout_marginLeft">15dp</item>
+         <item name="android:layout_marginRight">15dp</item>
+     </style>-->
+
+
+    <!-- ===========  Attendance List Form Styles============ -->
+
+
+    <style name="CustomTextView.ListAttendanceTextView" parent="CustomTextView">
+        <item name="android:textStyle" >normal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="CustomTextView.ListAttendanceTextView1" parent="CustomTextView">
+        <item name="android:textStyle" >normal</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+
+    <style name="AttendanceListView" >
+        <item name="android:paddingLeft" >12dp</item>
+        <item name="android:paddingRight" >20dp</item>
+        <item name="android:layout_width" >match_parent</item>
+        <item name="android:layout_height" >0dp</item>
+
+    </style>
+
+    <!-- ===================== End======================== -->
+
+    <style name="spinner_style" >
+        <item name="android:background">@drawable/spinnerbackground</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+
+    <!--+++++++++++new styles+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+
+
+    <!--for nomal font display-->
+
+
+    <style name="HeadingFontAndSize18dp.MarginLeft40">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NormalFontAndSize.MarginLeft40">
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="HeadingFontAndSize18dp.MarginLeft150">
+        <item name="android:layout_marginLeft">150dp</item>
+    </style>
+
+    <style name="NormalFontAndSize.MarginLeft20">
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+    <style name="NormalFontAndSize.MarginLeft120">
+        <item name="android:layout_marginLeft">120dp</item>
+    </style>
+
+    <style name="NormalFontAndSize.MarginLeft220">
+        <item name="android:layout_marginLeft">220dp</item>
+    </style>
+
+
+    <style name="NormalFontAndSize.MarginLeft40.MarginTop20">
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="NormalFontAndSize.MarginLeft200">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_marginLeft">200dp</item>
+    </style>
+    <style name="NormalFontAndSize.MarginLeft170">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_marginLeft">170dp</item>
+    </style>
+    <style name="NormalFontAndSize.MarginLeft300">
+        <item name="android:layout_marginLeft">255dp</item>
+    </style>
+
+    <style name="NormalFontAndSize.MarginLeft200.MarginTop20">
+        <item name="android:layout_marginLeft">200dp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="NormalFontAndSize.MarginLeft150">
+        <item name="android:layout_marginLeft">160dp</item>
+    </style>
+
+    <style name="checkbox.MarginLeft310">
+        <item name="android:layout_marginLeft">250dp</item>
+    </style>
+
+    <style name="checkbox.MarginLeft350">
+        <item name="android:layout_marginLeft">280dp</item>
+    </style>
+
+    //font for all textView and buttons
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+
+    <style name="FinalSpinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">@drawable/spinnerbackground</item>
+
+    </style>
+    <style name="ListViewForAll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+
+    </style>
+    <style name="SimpleButton1">
+        <item name="android:background">@drawable/buttongradient</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--+++++++++++new styles+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+
+
+    <!--for nomal font display-->
+
+    <style name="HeadingFontAndSize">
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="NormalFontAndSize">
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <style name="HeadingFontAndSize18dp">
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+
+
+    <!--Employee dashboard-->
+
+    <!-- <style name="TextViewForSubMenus" >
+         <item name="android:textColor" >#000000</item>
+         <item name="android:textSize" >14dp</item>
+         <item name="android:typeface" >serif</item>
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:layout_width">wrap_content</item>
+         <item name="android:background" >@drawable/border</item>
+
+     </style>-->
+    <style name="FrameWith1WeightLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="FrameWith2WeightLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="MainMenuFormat" >
+        <!-- <item name="android:textColor" >#000000</item>-->
+        <item name="android:background">#3399FF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize" >22dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:typeface" >sans</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name ="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="MenuFormat.Left">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">300dp</item>
+        <item name="android:background">@drawable/empgradient</item>
+    </style>
+    <style name="MenuFormat.Right" >
+        <item name="android:layout_marginLeft">300dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:background">@drawable/empgradient</item>
+    </style>
+
+    <style name="MenuFormat">
+        <item name="android:textColor" >#000000</item>
+        <item name="android:textSize" >16dp</item>
+        <item name="android:typeface" >serif</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:background" >@drawable/border</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="SpinnerForLandScape">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">300dp</item>
+    </style>
+
+    <style name="EditTextMultilineForLandScape">
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">match_parent</item>
+        <item name ="android:lines">3</item>
+        <item name ="android:ems">10</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">#c0c0c0</item>
+        <item name ="android:layout_marginBottom">2dp</item>
+        <item name ="android:layout_marginTop">8dp</item>
+        <item name ="android:layout_marginLeft">300dp</item>
+        <item name ="android:layout_marginRight">20dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:background">@drawable/backsquare</item>
+    </style>
+    <style name="CheckBoxStyleForLandscape">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginLeft">195dp</item>
+    </style>"
+
+    <style name="ImageApplyLeaveCalendarStart">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingLeft">125dp</item>
+    </style>
+
+    <style name="ImageApplyLeaveCalendarEnd">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingLeft">300dp</item>
+    </style>
+
+    <style name="FrameWith75WeightLayout">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">0.75</item>
+    </style>
+
+    <style name="FrameWith150WeightLayout">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1.50</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:text">Edit</item>
+        <item name="android:background">@drawable/buttongradient</item>
+        <item name="android:layout_marginLeft">245dp</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:onClick">ShowPopup</item>
+        <item name="android:layout_marginTop">28dp</item>
+    </style>
+
+    <style name="RealizerImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">-50dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:src">@drawable/rapido</item>
+    </style>
+
+    <style name="LoginHeading">
+        <item name="android:text">@string/app_name</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EditBoxBorLogin">
+        <item name="android:background">@drawable/backsquare</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:layout_marginLeft">100dp</item>
+        <item name="android:layout_marginRight">100dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textColorHint">#c0c0c0</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="LoginButtonForLand">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">100dp</item>
+        <item name="android:layout_marginRight">100dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@drawable/buttongradient</item>
+    </style>
+
+    <!--Employee dashboard-->
+
+    <!-- <style name="TextViewForSubMenus" >
+         <item name="android:textColor" >#000000</item>
+         <item name="android:textSize" >14dp</item>
+         <item name="android:typeface" >serif</item>
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:layout_width">wrap_content</item>
+         <item name="android:background" >@drawable/border</item>
+
+     </style>-->
+    <style name="MainMenuslide" >
+        <item name="android:textColor" >#000000</item>
+        <item name="android:background">@drawable/textcolormenu</item>
+        <item name="android:textSize" >19dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+
+
+</resources>
+
+
+

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="16"
+    android:background="@drawable/bggradient">
+
+    <!--Header for all screens-->
+    <FrameLayout style="@style/HeaderFrameLayoutWeight2">
+        <ImageView style="@style/RLogoImage"/>
+        <TextView style="@style/TextViewsBold20.GravityCenter"
+            android:text="@string/appHeader"/>
+        <TextView style="@style/TextViewsBold15.GravityRightTop"
+            android:id="@+id/txtUserName"/>
+    </FrameLayout>
+
+    <FrameLayout style="@style/SubFrameLayoutWeight1"
+        android:layout_height="30dp">
+        <TextView style="@style/TextViewNormal.marginRight"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+            android:text="Time Sheet List"/>
+    </FrameLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:id="@+id/spTimeSheetListing"
+        style="@style/spinner_style"
+        android:layout_weight="1"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp">
+
+        <TextView
+            style="@style/CustomTextView.ListAttendanceTextView"
+            android:layout_marginLeft="15dp"
+            android:text="Date"/>
+        <TextView
+            style="@style/CustomTextView.ListAttendanceTextView"
+            android:layout_marginLeft="125dp"
+            android:text="Total Hours"
+            android:id="@+id/txtInOutTime"
+            />
+        <TextView
+            style="@style/CustomTextView.ListAttendanceTextView"
+            android:layout_marginLeft="240dp"
+            android:text="Status"
+            android:id="@+id/txtTotalHrs"
+            />
+        <ImageView
+            style="@style/CustomTextView.ListAttendanceTextView"
+            android:id="@+id/imgOrderTimeSheet"
+            android:onClick="ChangeOrder"
+            android:src="@drawable/downarrow"
+            android:layout_height="27dp"
+            android:layout_width="90dp"
+            android:paddingLeft="60dp"
+            android:layout_marginTop="4dp"
+            android:tag="Ascending"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_white"/>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:id="@+id/lstTimeSheetListing">
+
+    </ListView>
+
+</LinearLayout><!-- From: file:/E:/RapidoESS/app/src/main/res/layout/timesheet_listing_layout.xml -->

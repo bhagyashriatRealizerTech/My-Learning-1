@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout style="@style/HeaderFrameLayout">
+            <ImageView style="@style/HeaderImage"/>
+            <TextView style="@style/HeaderText" android:layout_gravity="center" />
+            <TextView style ="@style/WelComeUserName" android:id="@+id/txtUserName"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dp">
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="500dp"
+                android:id="@+id/lstTimesheetDisplay"
+                android:scrollbarStyle="outsideOverlay">
+
+            </ListView>
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>
+<!-- From: file:/E:/Bhagyashri/Bhagyashri_Backup/Bhagyashri/HRMSRapidoESS/Project/RapidoESS/app/src/main/res/layout/time_sheet_display_layout.xml -->

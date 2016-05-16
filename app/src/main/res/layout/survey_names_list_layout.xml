@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="7dp"
+            android:background="@drawable/survey4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/imgSurvey"/>
+
+
+        <TextView
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            style="@style/CustomTextView"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:text="SurveyName"
+            android:id="@+id/txtSurveyName"
+            />
+
+
+        <TextView
+            style="@style/CustomTextView"
+            android:textStyle="normal"
+            android:layout_marginTop="45dp"
+            android:text="10/09/2015"
+            android:textSize="14sp"
+            android:id="@+id/txtStartDateSurvey"
+            android:layout_marginLeft="80dp"
+            />
+
+        <TextView
+            style="@style/CustomTextView"
+            android:textStyle="normal"
+            android:layout_marginTop="45dp"
+            android:text="20/09/2015"
+            android:textSize="14sp"
+            android:id="@+id/txtEndDateSurvey"
+            android:layout_marginLeft="200dp"
+            />
+    </FrameLayout>
+
+</LinearLayout>
+
+
+
+
+

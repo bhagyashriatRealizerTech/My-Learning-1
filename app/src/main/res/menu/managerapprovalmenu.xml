@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/applyLeave"
+        android:fontFamily="Droid Sans Mono"
+        android:textSize = "10dp"
+        android:title="Approve Leave"/>
+
+    <item
+        android:id="@+id/swipeRegularization"
+        android:fontFamily="Droid Sans Mono"
+        android:textSize = "10dp"
+        android:title="Approve Swipe Regularization"/>
+
+    <item
+        android:id="@+id/timesheetEntry"
+        android:fontFamily="Droid Sans Mono"
+        android:textSize = "10dp"
+        android:title="Approve TimeSheet Entry"/>
+
+
+</menu>

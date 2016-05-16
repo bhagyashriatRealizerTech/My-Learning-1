@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/applyLeave"
+            android:title="Apply Leave"/>
+
+        <item
+            android:id="@+id/swipeRegularization"
+            android:title="Swipe Regularization"/>
+
+        <item
+            android:id="@+id/timesheetEntry"
+            android:title="TimeSheet Entry"/>
+
+        <item
+            android:id="@+id/leaveBalance"
+            android:title="Leave Balance"/>
+        <item
+            android:id="@+id/leaveTakenRecords"
+            android:title="Leaves Records"/>
+        <item
+            android:id="@+id/holidayList"
+            android:title="Holiday List"/>
+
+
+</menu><!-- From: file:/E:/RapidoESS/app/src/main/res/menu/selfservicemenu.xml -->

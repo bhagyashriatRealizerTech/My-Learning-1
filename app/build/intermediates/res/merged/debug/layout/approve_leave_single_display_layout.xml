@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="15"
+    android:background="#ffffff">
+
+    <FrameLayout style="@style/SubFrameLayoutWeight1"
+        android:layout_height="wrap_content">
+        <TextView style="@style/TextViewNormal.marginRight"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+            android:text="Leave Details"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_white"/>
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="Employee Name:"
+           />
+        <TextView style="@style/NormalFontAndSize.MarginLeft200"
+            android:text="FirstName"
+            android:id="@+id/txtApproveFirstName"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="275dp"
+            android:text="LastName"
+            android:id="@+id/txtApproveLastName"/>
+    </FrameLayout>
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="Leave Type"
+            android:id="@+id/txtApproveLeaveRecordType"/>
+        <TextView style="@style/NormalFontAndSize.MarginLeft200"
+            android:text="No. of Days : "/>
+        <TextView style="@style/NormalFontAndSize.MarginLeft300"
+            android:text="Display days"
+            android:id="@+id/txtApproveLeaveRecordNoOfDays"/>
+    </FrameLayout>
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize.MarginLeft200"
+            android:text="Is Planned "
+            />
+        <CheckBox style="@style/checkbox.MarginLeft310"
+            android:id="@+id/chkApproveLeaveRecordIsPlanned"/>
+    </FrameLayout>
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize.MarginLeft200"
+            android:text="display date here "
+            android:id="@+id/txtApproveLeaveRecordStartDate"
+            android:layout_height="wrap_content" />
+        <CheckBox style="@style/checkbox.MarginLeft310"
+            android:id="@+id/chkApproveLeaveRecordMHSD"/>
+        <CheckBox style="@style/checkbox.MarginLeft350"
+            android:id="@+id/chkApproveLeaveRecordAHSD"/>
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="@string/startDate"/>
+    </FrameLayout>
+
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="@string/endDate"/>
+        <TextView style="@style/NormalFontAndSize.MarginLeft200"
+            android:text="display date here "
+            android:id="@+id/txtApproveLeaveRecordEndDate"/>
+        <CheckBox style="@style/checkbox.MarginLeft310"
+            android:id="@+id/chkApproveLeaveRecordMHED"/>
+        <CheckBox style="@style/checkbox.MarginLeft350"
+            android:id="@+id/chkApproveLeaveRecordAHED"/>
+    </FrameLayout>
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="@string/resumeOnDate"/>
+        <TextView style="@style/NormalFontAndSize.MarginLeft200"
+            android:text="display date here "
+            android:id="@+id/txtApproveLeaveRecordResumeOn"/>
+    </FrameLayout>
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="Reason of Leave: "/>
+        <TextView style="@style/NormalFontAndSize.MarginLeft200"
+            android:text="Display Reason here "
+            android:id="@+id/txtApproveLeaveRecordReason"
+            android:lines="2"/>
+    </FrameLayout>
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="Address on Leave: "/>
+        <TextView style="@style/NormalFontAndSize.MarginLeft200"
+            android:text="Display Reason here "
+            android:id="@+id/txtApproveLeaveRecordAddress"
+            android:lines="2"/>
+    </FrameLayout>
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="Emergency Contact: "/>
+        <TextView style="@style/NormalFontAndSize.MarginLeft200"
+            android:text="Display Contact here "
+            android:id="@+id/txtApproveLeaveRecordContact"
+            android:lines="2"/>
+    </FrameLayout>
+    <FrameLayout style="@style/FrameLayoutWeight2">
+        <Button style="@style/SimpleButton1"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/approve"
+            android:textStyle="bold"
+            android:onClick="ApproveSingleLeave"/>
+        <Button style="@style/SimpleButton1"
+            android:text="@string/Reject"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:onClick="RejectSingleLeave"
+            />
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/txtEmpId"/>
+</LinearLayout><!-- From: file:/E:/Bhagyashri/Bhagyashri_Backup/Bhagyashri/HRMSRapidoESS/Project/RapidoESS/app/src/main/res/layout/approve_leave_single_display_layout.xml -->

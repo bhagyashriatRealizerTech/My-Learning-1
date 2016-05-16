@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/list_background" android:state_activated="false"/>
+    <item android:drawable="@drawable/bggradient" android:state_pressed="true"/>
+    <item android:drawable="@drawable/bggradient" android:state_activated="true"/>
+    <item android:drawable="@drawable/bggradient" android:state_focused="true"  />
+
+</selector><!-- From: file:/E:/Bhagyashri/Bhagyashri_Backup/Bhagyashri/HRMSRapidoESS/Project/RapidoESS/app/src/main/res/drawable/list_selector.xml -->

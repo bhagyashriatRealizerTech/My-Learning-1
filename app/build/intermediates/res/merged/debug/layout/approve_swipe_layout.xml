@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="12"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <FrameLayout style="@style/SubFrameLayoutWeight1"
+        android:layout_height="wrap_content">
+        <TextView style="@style/TextViewNormal.marginRight"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+            android:text="Swipe Requests"/>
+    </FrameLayout>
+
+    <ListView
+        style="@style/CustomListView"
+        android:layout_marginTop="5dp"
+        android:layout_weight="12"
+        android:id="@+id/lstApproveSwipeDetails"
+        android:divider="#d8d8d8"
+        android:dividerHeight="0.5dp"
+        >
+    </ListView>
+
+</LinearLayout><!-- From: file:/E:/Bhagyashri/Bhagyashri_Backup/Bhagyashri/HRMSRapidoESS/Project/RapidoESS/app/src/main/res/layout/approve_swipe_layout.xml -->

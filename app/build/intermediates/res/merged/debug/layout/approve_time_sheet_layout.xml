@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="18"
+    android:background="#193469">
+
+
+    <!--Header for all screens-->
+    <FrameLayout style="@style/HeaderFrameLayoutWeight2">
+        <ImageView style="@style/RLogoImage"/>
+        <TextView style="@style/TextViewsBold20.GravityCenter"
+            android:text="@string/app_name"/>
+        <TextView style="@style/TextViewsBold15.GravityRightTop"
+            android:id="@+id/txtUserName"/>
+    </FrameLayout>
+
+    <!--SubHeder for All screens-->
+    <FrameLayout style="@style/SubFrameLayoutWeight1">
+        <TextView style="@style/TextViewsBold20.Top5"
+            android:layout_gravity="center"
+            android:id="@+id/txtTimeIn"/>
+        <TextView style="@style/TextViewNormal.center"
+            android:text="@string/approveTimeSheet"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <ListView style="@style/ListViewForAll"
+        android:layout_weight="15"
+        android:id="@+id/lstApproveTimeSheet"
+        />
+
+</LinearLayout><!-- From: file:/E:/Bhagyashri/Bhagyashri_Backup/Bhagyashri/HRMSRapidoESS/Project/RapidoESS/app/src/main/res/layout/approve_time_sheet_layout.xml -->

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="13"
+    android:background="#ffffff">
+
+
+     <FrameLayout style="@style/SubFrameLayoutWeight1"
+    android:layout_height="wrap_content">
+    <TextView style="@style/TextViewNormal.marginRight"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="15dp"
+        android:text="Leave Record Details"/>
+</FrameLayout>
+
+
+    <FrameLayout style="@style/FrameLayoutWeight1"
+        android:layout_marginTop="20dp">
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="Leave Type:"
+            android:textStyle="bold"
+            android:textColor="#323232"
+            android:id="@+id/txtLeaveRecord"/>
+        <TextView style="@style/NormalFontAndSize.MarginLeft170"
+            android:text="Display Leave type"
+            android:textColor="#323232"
+            android:id="@+id/txtLeaveRecordLeaveType"/>
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_blue"/>
+    <FrameLayout style="@style/FrameLayoutWeight1">
+
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:textColor="#323232"
+            android:textStyle="bold"
+            android:text="No. of Days : "/>
+        <TextView style="@style/NormalFontAndSize.MarginLeft170"
+            android:text="Display days"
+            android:textColor="#323232"
+            android:id="@+id/txtLeaveRecordNoOfDays"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_blue"/>
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="Is Planned:"
+            android:textStyle="bold"
+            android:textColor="#323232"
+            />
+        <CheckBox style="@style/NormalFontAndSize.MarginLeft170"
+            android:layout_marginLeft="165dp"
+            android:button="@drawable/customecheckbox"
+            android:id="@+id/chkLeaveRecordIsPlanned"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_blue"/>
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize.MarginLeft170"
+            android:text="display date here "
+            android:textColor="#323232"
+            android:id="@+id/txtLeaveRecordStartDate"
+            android:layout_height="wrap_content" />
+        <CheckBox style="@style/checkbox.MarginLeft310"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/customecheckbox"
+            android:id="@+id/chkLeaveRecordMHSD"/>
+        <CheckBox style="@style/checkbox.MarginLeft350"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/customecheckbox"
+            android:id="@+id/chkLeaveRecordAHSD"/>
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:textColor="#323232"
+            android:textStyle="bold"
+            android:text="@string/startDate"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_blue"/>
+
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:textStyle="bold"
+            android:textColor="#323232"
+            android:text="@string/endDate"/>
+        <TextView style="@style/NormalFontAndSize.MarginLeft170"
+            android:textColor="#323232"
+            android:text="display date here "
+            android:id="@+id/txtLeaveRecordEndDate"/>
+        <CheckBox style="@style/checkbox.MarginLeft310"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/customecheckbox"
+            android:id="@+id/chkLeaveRecordMHED"/>
+        <CheckBox style="@style/checkbox.MarginLeft350"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/customecheckbox"
+            android:id="@+id/chkLeaveRecordAHED"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_blue"/>
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:textColor="#323232"
+            android:textStyle="bold"
+            android:text="@string/resumeOnDate"/>
+        <TextView style="@style/NormalFontAndSize.MarginLeft170"
+            android:textColor="#323232"
+            android:text="display date here "
+            android:id="@+id/txtLeaveRecordResumeOn"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_blue"/>
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:textColor="#323232"
+            android:textStyle="bold"
+            android:text="Reason of Leave: "/>
+        <TextView style="@style/NormalFontAndSize.MarginLeft170"
+            android:textColor="#323232"
+            android:text="Display Reason here "
+            android:id="@+id/txtLeaveRecordReason"
+            android:lines="2"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_blue"/>
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:textColor="#323232"
+            android:textStyle="bold"
+            android:text="Address on Leave: "/>
+        <TextView style="@style/NormalFontAndSize.MarginLeft170"
+            android:textColor="#323232"
+            android:text="Display Reason here "
+            android:id="@+id/txtLeaveRecordAddress"
+            android:lines="2"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_blue"/>
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:textColor="#323232"
+            android:textStyle="bold"
+            android:text="Emergency Contact: "/>
+        <TextView style="@style/NormalFontAndSize.MarginLeft170"
+            android:text="Display Contact here "
+            android:id="@+id/txtLeaveRecordContact"
+            android:textColor="#323232"
+            android:lines="2"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_blue"/>
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:textColor="#323232"
+            android:textStyle="bold"
+            android:text="Manager Comment: "/>
+        <TextView style="@style/NormalFontAndSize.MarginLeft170"
+            android:textColor="#323232"
+            android:text="Display Manager Comment"
+            android:id="@+id/txtLeaveComment"
+            android:lines="2"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_blue"/>
+</LinearLayout><!-- From: file:/E:/RapidoESS/app/src/main/res/layout/leave_taken_record_layout.xml -->

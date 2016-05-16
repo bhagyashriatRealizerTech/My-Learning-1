@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="12"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
+
+    <FrameLayout style="@style/SubFrameLayoutWeight1"
+        android:layout_height="wrap_content">
+        <TextView style="@style/TextViewNormal.marginRight"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+            android:text="Survey Details"/>
+    </FrameLayout>
+
+
+
+    <ListView
+        style="@style/CustomListView"
+        android:layout_marginTop="5dp"
+        android:layout_weight="12"
+        android:scrollbars="vertical"
+        android:id="@+id/lstSurveyNames"
+        android:divider="#d8d8d8"
+        android:dividerHeight="0.5dp"
+        >
+    </ListView>
+
+</LinearLayout>
+

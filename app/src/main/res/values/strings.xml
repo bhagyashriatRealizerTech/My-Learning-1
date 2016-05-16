@@ -1,0 +1,245 @@
+<resources>
+    <string name="app_name">Rapido ESS</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_employee">EmployeeActivity</string>
+    <string name="title_activity_manager">ManagerActivity</string>
+    <string name="title_activity_swipe">SwipeActivity</string>
+    <string name="title_activity_del_activity_direction">DelActivityDirection</string>
+    <string name="title_activity_apply_leave">ApplyLeaveActivity</string>
+    <string name="title_activity_time_sheet_entry">TimeSheetEntryActivity</string>
+    <string name="title_activity_survery">SurveryActivity</string>
+    <string name="title_activity_swipe_approval">SwipeApprovalActivity</string>
+    <string name="title_activity_survey_summary">SurveySummary</string>
+    <string name="title_activity_approve_leave">ApproveLeaveActivity</string>
+
+
+<!--Arrays-->
+    <string name="projectlist">Employee Mgnt System</string>
+        <string-array name="projectarray">
+            <item>Employee system</item>
+            <item>Mobile system</item>
+            <item>.net System</item>
+        </string-array>
+
+    <string name="activitesTask">Development</string>
+        <string-array name="activitesArray">
+            <item>Testing </item>
+            <item>BA</item>
+            <item>Management</item>
+        </string-array>
+
+
+    <string name ="LeaveTypes">Privilage Leave</string>
+        <string-array name="LeaveTypesArray">
+            <item>Advance Leave </item>
+            <item>Medical Leave</item>
+            <item>Privilage Leave</item>
+        </string-array>
+    <string name="title_activity_leave_balance">LeaveBalanceActivity</string>
+    <string name="title_activity_balance_leave">BalanceLeaveActivity</string>
+    <string name="title_activity_leave_balance_display">LeaveBalanceDisplayActivity</string>
+    <string name="title_activity_leave_taken_details">LeaveTakenDetailsActivity</string>
+    <string name="title_activity_survey_names_activty">SurveyNamesActivty</string>
+    <string name="title_activity_time_sheet_display">TimeSheetDisplayActivity</string>
+    <string name="title_activity_holiday_list">HolidayListActivity</string>
+
+
+    // start from here
+    <string name="appHeader">Rapido ESS</string>
+    <string name ="applyLeave">1. Apply Leave</string>
+    <string name="leaveBalance">2. Leave Balance</string>
+    <string name="leaveRecords">3. Leave Records</string>
+    <string name="attendance">4. Attendance</string>
+    <string name="swipeRegular">5. Swipe Regularization</string>
+    <string name="timeSheetEntry">6. TimeSheet Entry</string>
+    <string name="timeSheetListing">7. TimeSheet Listing</string>
+    <string name="holidayList">8. Holiday List</string>
+    <string name="survey">1. Survey</string>
+    <string name="surveyExpired">2. Survey Expired</string>
+    <string name="balanceLeave">Current Balance :</string>
+    <string name="isPlanned"> Is Planned</string>
+    <string name="loginButton">Login</string>
+    <string name="applyButton">Apply</string>
+    <string name="logintTimeIn">Time In:</string>
+    <string name="title_activity_attendance">AttendanceActivity</string>
+    <string name="title_activity_time_sheet_listing_activity1">TimeSheetListingActivity1</string>
+    <string name="title_activity_time">time</string>
+    <string name="title_activity_time_sheet_listing">TimeSheetListingActivity</string>
+    <string name="btnSubmit">Submit</string>
+    <string name="btnNext">Next</string>
+    <string name="btnSummary">Summary</string>
+    <string name="btnSaveDraft">Save Draft</string>
+    <string name ="btnApprove">Approve</string>
+    <string name="Reject">Reject</string>
+    <string name="title_activity_holiday">HolidayActivity</string>
+    <string name="leaveCategory">Leave Type</string>
+    <string name="balance">Balance</string>
+    <string name="startDate">Start Date:</string>
+    <string name="status">Status</string>
+    <string name="endDate">End Date:</string>
+    <string name="title_activity_leave_taken_record">LeaveTakenRecordActivity</string>
+    <string name="resumeOnDate">Resume on:</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="description">Description</string>
+    <string name="date">Date</string>
+    <string name="empMenu">Employee Self Service</string>
+    <string name="managerMenu">Manager Self Service</string>
+    <string name="approveLeave">1.Leave Requests</string>
+    <string name="approveSwipe">2.Swipe Regularizations</string>
+    <string name="approveTimeSheet">3.TimeSheet Requests</string>
+    <string name="approve">Approve</string>
+    <string name="forgotPassword">Forgot Password !</string>
+    <string name ="rememberMe">Remember Me !</string>
+    <string name="copyRight">Copyright @2014-2015</string>
+    <string name="contactUs">Contact Us</string>
+    <string name="CurrentLeaveBal">Current Leave Balance:</string>
+
+
+
+    <string name="title_activity_approve_leave_single_record">ApproveLeaveSingleRecord</string>
+    <string name="title_activity_approve_leave_single_display">ApproveLeaveSingleDisplay</string>
+    <string name="title_activity_approve_swipe">ApproveSwipeActivity</string>
+    <string name="title_activity_approve_time_sheet">ApproveTimeSheetActivity</string>
+    <string name="title_activity_approve_time_sheet_single_record">
+        ApproveTimeSheetSingleRecordActivity
+    </string>
+    <string name="title_activity_approve_time_sheet_single_display">
+        ApproveTimeSheetSingleDisplayActivity
+    </string>
+    <string name="title_activity_common_mehods">CommonMehods</string>
+    <string name="title_activity_switch">SwitchActivity</string>
+    <string name="title_activity_time_sheet_weekly_details">TimeSheetWeeklyDetailsActivity</string>
+    <string name="title_activity_time_sheet_entry_activity1">TimeSheetEntryActivity1</string>
+    <string name="title_activity_testing">TestingActivity</string>
+
+
+    <string name="AnnualAllocations">Annual Allocation</string>
+        <string name="AcurredLeaves">Acurred Leaves    </string>
+          <string name="LeavesTaken">Leaves Taken      </string>
+
+    <string-array name="security_question">
+        <item>Select Security question:</item>
+        <item>What is your nick name?</item>
+        <item>What is your favourite colour?</item>
+    </string-array>
+
+   <string-array name="monthyear">
+       <item>Select Month</item>
+       <item>January</item>
+       <item>February</item>
+       <item>March</item>
+       <item>April</item>
+       <item>May</item>
+       <item>June</item>
+       <item>July</item>
+       <item>August</item>
+       <item>September</item>
+       <item>October</item>
+       <item>November</item>
+       <item>December</item>
+   </string-array>
+
+    <string-array name="year">
+        <item>Select Month</item>
+        <item>2014</item>
+        <item>2015</item>
+    </string-array>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+
+        <item >Home</item>
+        <item >Apply Leave</item>
+        <item >Leave Balance</item>
+        <item>Leave Records</item>
+        <item >Attendance</item>
+        <item >Swipe Regularization</item>
+        <item >Timesheet Entry</item>
+        <item >Timesheet Listing</item>
+        <item >Holiday List</item>
+        <item >Survey</item>
+        <item>Exit</item>
+    </string-array>
+
+    <string-array name="nav_drawer_mngitems">
+        <item >Home</item>
+        <item >Leave Requests</item>
+        <item >Swipe Requests</item>
+        <item >Timesheet Requests</item>
+
+        <item >Apply Leave</item>
+        <item >Leave Balance</item>
+        <item>Leave Records</item>
+        <item >Attendance</item>
+        <item >Swipe Regularization</item>
+        <item >Timesheet Entry</item>
+        <item >Timesheet Listing</item>
+        <item >Holiday List</item>
+
+        <item >Survey</item>
+        <item>Exit</item>
+    </string-array>
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/slidehome</item>
+        <item>@drawable/sliderapplyleave</item>
+        <item>@drawable/slideleavebalance</item>
+        <item>@drawable/slideleaverecord</item>
+        <item>@drawable/slideattendance</item>
+        <item>@drawable/slideswipereularization</item>
+        <item>@drawable/slidetimesheetentry</item>
+        <item>@drawable/slidetimesheetlisting</item>
+        <item>@drawable/slideholidaylist</item>
+        <item>@drawable/slidesurvelisting</item>
+        <item>@drawable/slidehome</item>
+    </array>
+
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_mgricons">
+        <item>@drawable/slidehome</item>
+        <item>@drawable/slideapproveleave</item>
+        <item>@drawable/slideswipeapprove</item>
+        <item>@drawable/slidetimesheetapprove</item>
+        <item>@drawable/sliderapplyleave</item>
+        <item>@drawable/slideleavebalance</item>
+        <item>@drawable/slideleaverecord</item>
+        <item>@drawable/slideattendance</item>
+        <item>@drawable/slideswipereularization</item>
+        <item>@drawable/slidetimesheetentry</item>
+        <item>@drawable/slidetimesheetlisting</item>
+        <item>@drawable/slideholidaylist</item>
+        <item>@drawable/slidesurvelisting</item>
+        <item>@drawable/slidehome</item>
+    </array>
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+
+
+
+    <string name="rapido">Rapido ESS</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+
+   </resources>

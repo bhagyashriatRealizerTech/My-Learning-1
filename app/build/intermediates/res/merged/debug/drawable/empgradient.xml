@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#D3D3D3"
+
+                android:endColor="#F4F4F4"
+                android:angle="270" />
+        </shape>
+    </item>
+</selector>
+<!-- From: file:/E:/Bhagyashri/Bhagyashri_Backup/Bhagyashri/HRMSRapidoESS/Project/RapidoESS/app/src/main/res/drawable/empgradient.xml -->

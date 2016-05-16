@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/CustomBackgroundAll"
+        android:weightSum="14">
+
+    <!--Header for all screens-->
+    <FrameLayout style="@style/HeaderFrameLayoutWeight2">
+        <ImageView style="@style/RLogoImage"/>
+        <TextView style="@style/TextViewsBold20.GravityCenter"
+            android:text="@string/app_name"/>
+        <TextView style="@style/TextViewsBold15.GravityRightTop"
+            android:id="@+id/txtUserName"/>
+    </FrameLayout>
+    <ImageView
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/weeklytimesheet"
+        style="@style/FormImage" />
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/HeadingFontAndSize"
+            android:text="Approve TimeSheet Details"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_white"/>
+
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="20dp"
+            android:text="Employee Name:"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:textSize="16sp"
+            android:layout_marginLeft="150dp"
+            android:textColor="#66FF66"
+            android:text="FirstName"
+            android:id="@+id/txtApproveTimeSheetFirstName"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="250dp"
+            android:text="LastName"
+            android:textSize="16sp"
+            android:textColor="#66FF66"
+            android:id="@+id/txtApproveTimeSheetLastName"/>
+    </FrameLayout>
+
+     <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_white"/>
+
+
+    <FrameLayout style="@style/FrameLayoutWeight2">
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="20dp"
+            android:text="Date:"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="100dp"
+            android:text="Date:"
+            android:id="@+id/txtApproveTimeSheetMonday"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="200dp"
+            android:text="Total Hours: "/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="290dp"
+            android:text="TotalHrs"
+            android:id="@+id/txtTotalHrsMonday"
+            android:textColor="#FF3300"/>
+
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="28dp"
+            android:text="Project:"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="28dp"
+            android:text="Project name here "
+            android:id="@+id/txtTimeSheetMondayProject"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Activity:"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:text="Activity name here "
+            android:id="@+id/txtTimeSheetMondayActivity"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_white"/>
+    <FrameLayout style="@style/FrameLayoutWeight2">
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="20dp"
+            android:text="Date:"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:text="Date:"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/txtApproveTimeSheetTuesday"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:text="Total Hours:"
+            android:layout_marginLeft="200dp"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="290dp"
+            android:text="TotalHrs"
+            android:id="@+id/txtTotalHrsTuesday"
+            android:textColor="#FF3300"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="28dp"
+            android:text="Project:"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="28dp"
+            android:text="Project name here "
+            android:id="@+id/txtTimeSheetTuesdayProject"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Activity:"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:text="Activity name here "
+            android:id="@+id/txtTimeSheetTuesdayActivity"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_white"/>
+
+    <FrameLayout style="@style/FrameLayoutWeight2">
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="20dp"
+            android:text="Date:"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:text="Date:"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/txtApproveTimeSheetWednesday"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="200dp"
+            android:text="Total Hours: "/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="290dp"
+            android:text="TotalHrs"
+            android:id="@+id/txtTotalHrsWednesday"
+            android:textColor="#FF3300"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="28dp"
+            android:text="Project:"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="28dp"
+            android:text="Project name here "
+            android:id="@+id/txtTimeSheetWednesdayProject"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Activity:"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:text="Activity name here "
+            android:id="@+id/txtTimeSheetWednesdayActivity"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_white"/>
+
+    <FrameLayout style="@style/FrameLayoutWeight2">
+        <TextView style="@style/NormalFontAndSize"
+            android:text="Date:"
+            android:layout_marginLeft="20dp"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:text="Date:"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/txtApproveTimeSheetThursday"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="200dp"
+            android:text="Total Hours: "/>
+        <TextView style="@style/NormalFontAndSize"
+            android:text="TotalHrs"
+            android:layout_marginLeft="290dp"
+            android:id="@+id/txtTotalHrsThursday"
+            android:textColor="#FF3300"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="28dp"
+            android:text="Project:"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="28dp"
+            android:text="Project name here "
+            android:id="@+id/txtTimeSheetThursdayProject"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Activity:"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:text="Activity name here "
+            android:id="@+id/txtTimeSheetThursdayActivity"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_white"/>
+    <FrameLayout style="@style/FrameLayoutWeight2">
+        <TextView style="@style/NormalFontAndSize"
+            android:text="Date:"
+            android:layout_marginLeft="20dp"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:text="Date:"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/txtApproveTimeSheetFriday"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="200dp"
+            android:text="Total Hours: "/>
+        <TextView style="@style/NormalFontAndSize"
+            android:text="TotalHrs"
+            android:layout_marginLeft="290dp"
+            android:id="@+id/txtTotalHrsFriday"
+            android:textColor="#FF3300"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="28dp"
+            android:text="Project:"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="28dp"
+            android:text="Project name here "
+            android:id="@+id/txtTimeSheetFridayProject"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Activity:"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:text="Activity name here "
+            android:id="@+id/txtTimeSheetFridayActivity"/>
+    </FrameLayout>
+</LinearLayout>
+

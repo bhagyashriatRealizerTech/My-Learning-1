@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:id="@+id/txtLeaveCategory"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            style="@style/CustomTextView.ListAttendanceTextView"
+            android:text="Leave Type"
+            />
+        <TextView
+            android:id="@+id/txtLeaveBal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            style="@style/CustomTextView.ListAttendanceTextView"
+            android:text="Balance"
+            />
+
+
+
+        <TextView
+            android:id="@+id/txtAccuredLeaves"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            style="@style/CustomTextView.ListAttendanceTextView"
+            android:text="Accured"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/txtLeavesTaken"
+            style="@style/CustomTextView.ListAttendanceTextView"
+            android:text="Leaves"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/border_white"/>
+
+</LinearLayout>
+<!-- From: file:/E:/RapidoESS/app/src/main/res/layout/leave_balance_list_layout.xml -->

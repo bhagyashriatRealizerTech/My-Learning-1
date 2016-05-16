@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="8"
+    style="@style/CustomBackgroundAll"
+    android:id="@+id/rootLinearLayout">
+    <!--Header for all screens-->
+    <FrameLayout style="@style/FrameWith1WeightLayout"
+        android:background="#3399ff">
+        <ImageView style="@style/RLogoImage"/>
+        <TextView style="@style/TextViewsBold20.GravityCenter"
+            android:text="@string/app_name"/>
+        <TextView style="@style/TextViewsBold15.GravityRightTop"
+            android:id="@+id/txtUserName"/>
+    </FrameLayout>
+    <FrameLayout
+        style="@style/FrameWith1WeightLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Duration"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="DisplayPreviousWeek"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="125dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtFirstDay"
+            android:gravity="right"
+            android:text="start week"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="150dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLastDay"
+            android:gravity="left"
+            android:text="end week"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="240dp" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="325dp"
+            android:onClick="DisplayNextWeek"/>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/addTimeSheet"
+        android:orientation="horizontal"></LinearLayout>
+    <!--<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gvWeekDays"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:numColumns="7"
+        android:layout_weight="1"
+        android:background="@color/highlighted_text_material_light">
+    </GridView>-->
+
+
+    <FrameLayout style="@style/FrameWith1WeightLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summary :"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Display Summary :"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"/>
+
+    </FrameLayout>
+    <FrameLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy Previous Week"
+            android:onClick="FillFromPrevious"
+            android:layout_gravity="right"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send for Approval"
+            android:onClick="TimeSheetForApproval"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+    </FrameLayout>
+
+
+</LinearLayout><!-- From: file:/E:/Bhagyashri/Bhagyashri_Backup/Bhagyashri/HRMSRapidoESS/Project/RapidoESS/app/src/main/res/layout/timesheet_entry_layout.xml -->

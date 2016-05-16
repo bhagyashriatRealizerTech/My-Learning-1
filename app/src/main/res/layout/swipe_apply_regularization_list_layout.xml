@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff">
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize"
+            android:layout_marginLeft="20dp"
+           android:layout_gravity="left"
+            android:text="@string/monday"
+            android:id="@+id/txtDayForSwipe"
+            android:layout_marginTop="16dp"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:text="3-8-2015"
+            android:layout_gravity="center"
+            android:id="@+id/txtSwipeDate"
+            android:layout_marginTop="10dp" />
+        <TextView style="@style/NormalFontAndSize"
+            android:text="Total"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right"
+            android:id="@+id/txtSwipeTotal"
+            android:layout_marginTop="16dp"/>
+
+    </FrameLayout>
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView style="@style/NormalFontAndSize"
+            android:text="Time in"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="left"
+            android:id="@+id/txtSwipeTimeIn"
+            android:layout_marginTop="16dp"/>
+        <TextView style="@style/NormalFontAndSize"
+            android:text="Time out"
+            android:layout_gravity="center"
+            android:id="@+id/txtSwipeTimeOut"
+            android:layout_marginTop="4dp"/>
+
+
+        <Button
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/applyButton"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@drawable/buttonselector"
+            android:id="@+id/btnApplySwipe"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:onClick="GiveReason"/>
+    </FrameLayout>
+
+
+
+</LinearLayout>

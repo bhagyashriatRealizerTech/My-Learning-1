@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="15"
+    android:background="#ffffff">
+
+
+
+    <FrameLayout style="@style/SubFrameLayoutWeight1"
+        android:layout_height="wrap_content">
+        <TextView style="@style/TextViewNormal.marginRight"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+            android:text="Attendance"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Select Month :    "
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="16dp"
+
+        />
+    <Spinner
+        android:id="@+id/spMonthsForAttendance"
+        style="@style/FinalSpinner"
+        android:layout_gravity="center"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_height="30dp"
+        android:layout_width="120dp"
+        android:scrollbars="vertical"
+        android:entries="@array/monthyear"/>
+        </LinearLayout>
+
+</FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            style="@style/CustomTextView.ListAttendanceTextView"
+            android:text="@string/date"
+            android:layout_gravity="left"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            style="@style/CustomTextView.ListAttendanceTextView"
+            android:layout_gravity="center|top"
+            android:text="In-Out Time"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/txtInOutTime"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            style="@style/CustomTextView.ListAttendanceTextView"
+            android:layout_gravity="right"
+            android:text="Total Hours"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/txtTotalHrs"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            />
+        <ImageView
+            style="@style/CustomTextView.ListAttendanceTextView"
+            android:id="@+id/imgOrder"
+            android:layout_height="20dp"
+            android:layout_width="90dp"
+            android:onClick="ChangeOrder"
+            android:src="@drawable/downarrow"
+            android:paddingLeft="60dp"
+            android:layout_gravity="left|center_vertical"
+            android:tag="Ascending"/>
+
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_white"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/attendanceList"
+        />
+
+</LinearLayout>

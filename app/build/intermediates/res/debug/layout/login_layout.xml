@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="12"
+    android:background="@drawable/gradientbg">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="10dp"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:src="@drawable/rapido"/>
+
+    <TextView style="@style/HeadingStyle"
+        android:layout_weight="2"
+        android:text="@string/appHeader"/>
+
+    <EditText style="@style/TextViewStyle"
+        android:hint="Employee Id"
+        android:textColor="#000000"
+        android:textColorHint="#c0c0c0"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+        android:id="@+id/edtEmpId"/>
+
+    <EditText style="@style/TextViewStyle"
+        android:hint="Password"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#c0c0c0"
+        android:paddingLeft="10dp"
+        android:password="true"
+        android:id="@+id/edtPassword"/>
+
+    <Button style="@style/LoginButton"
+        android:id="@+id/btnLogin"
+        android:text="@string/loginButton"
+        android:onClick="LoginClick"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView style="@style/TextViewsBold15"
+            android:text="Forgot Password !"
+            android:layout_marginTop="12dp"
+            android:onClick="ForgotPswd"
+            android:clickable="true"
+            android:id="@+id/txtForgetPswrd"/>
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Remember Me !"
+            />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"></FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView style="@style/TextViewsBold15"
+            android:text="© 2015 RealizerTech"/>
+        <TextView style="@style/TextViewsBold15"
+            android:text="Contact Us"
+            android:clickable="true"
+            android:onClick="contactUs"
+            android:layout_gravity="right"/>
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout><!-- From: file:/E:/RapidoESS/app/src/main/res/layout/login_layout.xml -->

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--SubHeder for All screens-->
+    <FrameLayout style="@style/SubFrameLayoutWeight1"
+        android:layout_height="wrap_content">
+        <TextView style="@style/TextViewNormal.marginRight"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+            android:text="Home"/>
+
+        <TextView style="@style/TextViewNormal.marginRight"
+            android:textSize="15dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="60dp"
+            android:text="Time In:"/>
+        <TextView style="@style/TextViewsBold20.Top5"
+            android:layout_gravity="center_vertical|right"
+            android:textStyle="normal"
+            android:textSize="15dp"
+            android:text="00:00"
+            android:id="@+id/txtTimeIn"/>
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtApproveLeave"
+                    android:background="@drawable/textcolormenu"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/slideapproveleave"
+                    android:text="Leave Requests"/>
+                <Button
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtApproveSwipe"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/textcolormenu"
+                    android:drawablePadding="5dip"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/slideswipeapprove"
+                    android:text="Swipe Requests"/>
+                <Button
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtApproveTimeSheet"
+                    android:background="@drawable/textcolormenu"
+                    android:drawablePadding="5dip"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/slidetimesheetapprove"
+                    android:text="TimeSheet Requests"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtApplyLeave"
+                    android:background="@drawable/textcolormenu"
+                    android:drawablePadding="5dip"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/sliderapplyleave"
+                    android:text="Apply Leave"/>
+                <Button
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtLeaveBalance"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/textcolormenu"
+                    android:drawablePadding="5dip"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/slideleavebalance"
+                    android:text="Leave Balance"/>
+                <Button
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtLeaveRecords"
+                    android:background="@drawable/textcolormenu"
+                    android:drawablePadding="5dip"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/slideleaverecord"
+                    android:text="Leave Record"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTimeSheetListing"
+                    android:background="@drawable/textcolormenu"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/slidetimesheetlisting"
+                    android:text="TimeSheet Listing"/>
+
+                <Button
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/txtSwipeRegularization"
+                    android:background="@drawable/textcolormenu"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/slideswipereularization"
+                    android:text="Regularize Swipe"/>
+                <Button
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTimeSheetEntry"
+                    android:background="@drawable/textcolormenu"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/slidetimesheetentry"
+                    android:text="TimeSheet Entry"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtAttendance"
+                    android:background="@drawable/textcolormenu"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/slideattendance"
+                    android:text="Attendance"/>
+
+
+                <Button
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/txtHolidayList"
+                    android:background="@drawable/textcolormenu"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/slideholidaylist"
+                    android:text="Holiday List"/>
+                <Button
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textcolormenu"
+                    android:id="@+id/txtSurvey"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/slidesurvelisting"
+                    android:text="Survey"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_white"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView style="@style/TextViewsBold15"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"
+                    android:text="© 2015 RealizerTech"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+    </ScrollView>
+</LinearLayout><!-- From: file:/E:/RapidoESS/app/src/main/res/layout/managerdashboardlayout.xml -->

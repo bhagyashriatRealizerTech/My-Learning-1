@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<FrameLayout style="@style/FrameWith1WeightLayout">
+      <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spProjects"/>
+      <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/spActivities"/>
+       <EditText
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Monday"
+         android:id="@+id/edtMondayTimeEnty"
+         android:layout_marginLeft="100dp"/>
+       <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tuesday"
+        android:id="@+id/edtTuesDayTimeEnty"
+        android:layout_marginLeft="125dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wednesday"
+        android:id="@+id/edtWednesDayTimeEnty"
+        android:layout_marginLeft="150dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thursday"
+        android:id="@+id/edtThursDayTimeEnty"
+        android:layout_marginLeft="175dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Friday"
+        android:id="@+id/edtFriDayTimeEnty"
+        android:layout_marginLeft="200dp"/>
+
+      </FrameLayout>
+</LinearLayout><!-- From: file:/E:/Bhagyashri/Bhagyashri_Backup/Bhagyashri/HRMSRapidoESS/Project/RapidoESS/app/src/main/res/layout/timesheet_entry_gridview_layout.xml -->

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="7.5"
+    android:background="@drawable/gradientbg">
+    <FrameLayout style="@style/HeaderFrameLayoutWeight2"
+        android:layout_height="50dp"
+        android:layout_weight="2">
+        <ImageView style="@style/RLogoImage"/>
+        <TextView style="@style/TextViewsBold20.GravityCenter"
+            android:text="@string/app_name"
+            android:fontFamily="sans-serif-condensed"/>
+        <TextView style="@style/TextViewsBold15.GravityRightTop"
+            android:id="@+id/txtUserName"/>
+    </FrameLayout>
+    <!--SubHeder for All screens-->
+    <FrameLayout style="@style/SubFrameLayoutWeight1"
+        android:layout_height="wrap_content">
+
+        <TextView style="@style/TextViewNormal.marginRight"
+            android:textSize="18dp"
+            android:text="Time In:"/>
+        <TextView style="@style/TextViewsBold20.Top5"
+            android:layout_gravity="right"
+            android:textStyle="normal"
+            android:textSize="15dp"
+            android:id="@+id/txtTimeIn"/>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_weight="5.5"
+        android:layout_width="280dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+
+    <TextView style="@style/MainMenu"
+        android:text="@string/empMenu"/>
+
+    <TextView
+        android:text="@string/applyLeave"
+        style="@style/TextViewForMenus.border"
+        android:id="@+id/txtApplyLeave"
+        android:onClick="ApplyLeave"/>
+    <TextView
+        android:text="@string/leaveBalance"
+        style="@style/TextViewForMenus.border"
+        android:id="@+id/txtLeaveBalance"
+        android:onClick="LeaveBalance"/>
+    <TextView
+        android:text="@string/leaveRecords"
+        style="@style/TextViewForMenus.border"
+        android:id="@+id/txtLeaveRecords"
+        android:onClick="LeaveRecords"/>
+    <TextView
+        android:text="@string/attendance"
+        style="@style/TextViewForMenus.border"
+        android:id="@+id/txtAttendance"
+        android:onClick="Attendance"/>
+    <TextView
+        android:text="@string/swipeRegular"
+        style="@style/TextViewForMenus.border"
+        android:id="@+id/txtSwipeRegularization"
+        android:onClick="SwipeRegularization"/>
+    <TextView
+        android:text="@string/timeSheetEntry"
+        style="@style/TextViewForMenus.border"
+        android:id="@+id/txtTimeSheetEntry"
+        android:onClick="TimeSheetEntry"/>
+    <TextView
+        android:text="@string/timeSheetListing"
+        style="@style/TextViewForMenus.border"
+        android:id="@+id/txtTimeSheetListing"
+        android:onClick="TimeSheetListing"/>
+    <TextView
+        android:text="@string/holidayList"
+        style="@style/TextViewForMenus.border"
+        android:id="@+id/txtHolidayList"
+        android:onClick="HolidayList"/>
+
+    // Other Services Menu
+    <TextView   style="@style/MainMenu"
+        android:text="Other Services"/>
+    <TextView
+        android:text="@string/survey"
+        style="@style/TextViewForMenus.border"
+        android:id="@+id/txtSurvey"
+        android:onClick="SurveyList"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="17dp"
+        android:text="Copyright@Realizertech.com"
+        android:onClick="SurveyList"/>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/E:/RapidoESS/app/src/main/res/layout/darwermenu.xml -->

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <TextView
+            style="@style/HeadingFontAndSize18dp"
+            android:text="FirstName "
+            android:layout_marginLeft="20dp"
+            android:id="@+id/txtApproveTimeSheetFirstName"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            style="@style/NormalFontAndSize"
+            android:text="Week First Date"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/txtApproveTimeSheetDate"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            style="@style/HeadingFontAndSize18dp"
+            android:text="LastName"
+            android:layout_marginLeft="125dp"
+            android:id="@+id/txtApproveTimeSheetLastName"
+            />
+        <TextView
+            style="@style/NormalFontAndSize"
+            android:text="@string/endDate"
+            android:layout_marginLeft="125dp"
+            android:id="@+id/txtApproveTimeSheetTotalHrs"
+            android:layout_marginTop="30dp"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="225dp"
+            android:src="@drawable/leaveapprove"
+            android:id="@+id/imgBtnApproveTimeSheet"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="285dp"
+            android:src="@drawable/reject"
+            android:id="@+id/imgBtnRejectTimeSheet"
+            />
+    </FrameLayout>
+
+</LinearLayout>

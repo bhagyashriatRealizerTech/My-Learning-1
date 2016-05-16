@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.realizer.rapido"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <!-- GCM connects to Google Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!--
+     Creates a custom permission so only this app can receive its messages.
+
+     NOTE: the permission *must* be called PACKAGE.permission.C2D_MESSAGE,
+           where PACKAGE is the application's package name.
+    -->
+    <permission
+        android:name="com.realizer.rapido.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.realizer.rapido.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/rlogo"
+        android:label="Rapido ESS"
+        android:largeHeap="true"
+        android:theme="@style/AppBaseTheme" >
+        <activity
+            android:name="com.realizer.rapido.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.realizer.rapido.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.realizer.rapido.MainActivityManager"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.realizer.rapido.SurveryDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.realizer.rapido.TimeSheetDisplayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.realizer.rapido.ApproveLeaveSingleDisplayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.realizer.rapido.time"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.realizer.rapido.TimeSheetListingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.realizer.rapido.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.realizer.rapido.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <!--
+        <activity android:name=".ApproveLeaveSingleRecordAsyncTaskGet"/>
+        <activity android:name=".ApproveLeaveSingleDisplay"/>
+        -->
+
+        <activity
+            android:name="com.realizer.rapido.ApproveTimeSheetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.realizer.rapido.ApproveTimeSheetSingleRecordActivity"
+            android:screenOrientation="portrait" />
+        <!-- <activity android:name=".ApproveTimeSheetSingleDisplayActivity"/> -->
+        <activity
+            android:name="com.realizer.rapido.TransparentLeaveApprove"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.realizer.rapido.TimeSheetWeeklyDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.realizer.rapido.TimeSheetEntryActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.google.android.gcm.demo.app" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+          Application-specific subclass of GCMBaseIntentService that will
+          handle received messages.
+
+          By default, it must be named .GCMIntentService, unless the
+          application uses a custom BroadcastReceiver that redefines its name.
+        -->
+        <service android:name="com.realizer.rapido.GCMIntentService" />
+
+        <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="com.google.android.gms.measurement.AppMeasurementContentProvider"
+            android:authorities="com.realizer.rapido.google_measurement_service"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

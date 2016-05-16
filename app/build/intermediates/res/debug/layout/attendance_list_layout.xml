@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00ffffff">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/CustomTextView.ListAttendanceTextView"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Date"
+            android:layout_gravity="left"
+            android:id="@+id/txtAttendanceDate" />
+
+        <TextView
+            style="@style/CustomTextView.ListAttendanceTextView"
+            android:layout_weight="1"
+            android:text="InTime-OutTime"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/txtAttendanceInOutTime"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            style="@style/CustomTextView.ListAttendanceTextView"
+            android:layout_weight="2"
+            android:layout_gravity="right"
+            android:text="Total Hours"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="7dp"
+            android:id="@+id/txtAttendanceTotalHrs"
+            />
+    </FrameLayout>
+
+
+</LinearLayout>
+<!-- From: file:/E:/RapidoESS/app/src/main/res/layout/attendance_list_layout.xml -->

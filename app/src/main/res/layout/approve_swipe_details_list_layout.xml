@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff">
+
+    <FrameLayout style="@style/FrameLayoutWeight1">
+        <TextView  style="@style/CustomTextView.ListAttendanceTextView"
+            android:layout_gravity="left|"
+            android:layout_marginLeft="5dp"
+            android:text="FirstName"
+            android:id="@+id/txtApproveSwipeFirstName"
+            android:layout_marginTop="10dp"/>
+
+        <TextView  style="@style/CustomTextView.ListAttendanceTextView"
+            android:layout_marginLeft="5dp"
+            android:text="@string/monday"
+            android:id="@+id/txtApproveDayForSwipe"
+            android:layout_marginTop="40dp"/>
+        <TextView  style="@style/CustomTextView.ListAttendanceTextView"
+            android:text="3-8-2015"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/txtApproveSwipeDate"
+            android:layout_marginTop="40dp"
+            />
+        <TextView  style="@style/CustomTextView.ListAttendanceTextView"
+            android:text="8.30 "
+            android:layout_marginLeft="180dp"
+            android:id="@+id/txtApproveSwipeTime"
+            android:layout_marginTop="40dp"/>
+
+        <TextView  style="@style/CustomTextView.ListAttendanceTextView"
+            android:text="Picnic "
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/txtSwipeMismatchReason"
+            />
+        <Button
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:text="Approve"
+            android:id="@+id/btnApproveSwipe"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:background="@drawable/buttonselector"
+            />
+
+        <Button
+            android:layout_gravity="right"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginTop="65dp"
+            android:text=" Reject  "
+            android:id="@+id/btnRejectSwipe"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttonselector"
+             />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#33578D"
+                android:centerColor="#4F94CD"
+                android:endColor="#33578D"
+                android:angle="360" />
+        </shape>
+    </item>
+</selector><!-- From: file:/E:/RapidoESS/app/src/main/res/drawable/bggradient.xml -->

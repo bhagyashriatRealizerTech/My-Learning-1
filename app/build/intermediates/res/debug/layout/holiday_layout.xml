@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="14"
+    android:background="#ffffff">
+
+    <FrameLayout style="@style/SubFrameLayoutWeight1"
+        android:layout_height="wrap_content">
+        <TextView style="@style/TextViewNormal.marginRight"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/displayyear"
+            android:hint="Display year "
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+           />
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_weight="1">
+        <TextView
+            style="@style/CustomTextView"
+            android:layout_gravity="left|center_horizontal"
+            android:text="@string/description"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            style="@style/CustomTextView"
+            android:text="@string/date"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_white"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="13"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/lstHolidayList"/>
+
+</LinearLayout><!-- From: file:/E:/RapidoESS/app/src/main/res/layout/holiday_layout.xml -->
